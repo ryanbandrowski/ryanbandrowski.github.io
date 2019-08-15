@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Web Visualization Dashboard (Latitude)</title>
+    <title>Visualization Comparison</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="comparison.css">
 </head>
 
 <body>
@@ -42,40 +42,46 @@
 
   <div class="container-fluid">
     <div class="row justify-content-center">
-      <div class="col-md-7">
-        <div class="box">
-          <h2 class="header-text">Summary: Latitude vs. X</h2>
-          <hr>
-          <p>
-            <img src="./Resources/assets/images/lat_v_temp.png" class="img-fluid float-left" id="landing-image" alt="City Latitude vs. Max Temperature">
-            <br>The purpose of this project was to analyze how weather changes as you get closer to the equator. 
-            To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.<br>
-            <br>After assembling the dataset, we used Matplotlub to plot various aspects of the weather vs. latitude. Factors we looked
-            at included: temperature, humidity, cloudiness, and wind speed. This site provides the source data and visualizations
-            created as part of the analysis, as well as explanations and descriptions of any trends and correlations we witnessed.
-          </p>
-        </div>
-      </div>
-      <div class="col-md-5">
+        <div class="col-md-11">
           <div class="box">
-            <h3 class="header-text">Visualizations</h3>
+            <h2 class="header-text">Comparison: Latitude vs. X</h2>
             <hr>
-            <p>
-                <a href="./Visualizations/temp.html">
-                  <img src="./Resources/assets/images/lat_v_temp.png" class="img-fluid" id="img_float_left" alt="City Latitude vs. Max Temperature">
-                </a>
-                <a href="./Visualizations/humid.html">
-                  <img src="./Resources/assets/images/lat_v_humidity.png" class="img-fluid" id="img_no_float" alt="City Latitude vs. Humidity">
-                </a>
-                <a href="./Visualizations/cloud.html">
-                  <img src="./Resources/assets/images/lat_v_cloudiness.png" class="img-fluid" id="img_float_left" alt="City Latitude vs. Cloudiness">
-                </a>
-                <a href="./Visualizations/wind.html">
-                  <img src="./Resources/assets/images/lat_v_windspeed.png" class="img-fluid" id="img_no_float" alt="City Latitude vs. Wind Speed">
-                </a>             
-            </p>
+            <p class="comp-note">Click any plot to get an in-depth analysis.<br></p>
+            <div class="row justify-content-center">
+                <div class="col-md-5">
+                    <p class="comp-header">
+                        vs. Max Temperature
+                        <a href="./Visualizations/temp.html">
+                            <img src="./Resources/assets/images/lat_v_temp.png" class="img-fluid" alt="City Latitude vs. Max Temperature">
+                        </a>
+                    </p>
+                    <hr class="comp-hline">
+                    <p class="comp-header">
+                        vs. Cloudiness
+                        <a href="./Visualizations/cloud.html">
+                            <img src="./Resources/assets/images/lat_v_cloudiness.png" class="img-fluid" alt="City Latitude vs. Cloudiness">
+                        </a>
+                    </p>
+                    <hr class="comp-hline">
+                </div>
+                <div class="col-md-5">
+                    <p class="comp-header">
+                        vs. Humidity
+                        <a href="./Visualizations/humid.html">
+                            <img src="./Resources/assets/images/lat_v_humidity.png" class="img-fluid" alt="City Latitude vs. Humidity">
+                        </a>
+                    </p>
+                    <hr class="comp-hline">
+                    <p class="comp-header">
+                        vs. Wind Speed
+                        <a href="./Visualizations/wind.html">
+                            <img src="./Resources/assets/images/lat_v_windspeed.png" class="img-fluid" alt="City Latitude vs. Wind Speed">
+                        </a>
+                    </p>
+                </div>
+            </div>
           </div>
-      </div>
+        </div>
     </div>
   </div>
 

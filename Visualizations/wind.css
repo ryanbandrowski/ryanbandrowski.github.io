@@ -1,0 +1,105 @@
+/* CSS Modifications */
+
+#navbar-lat {
+    font-size: 2rem;
+    color: white;
+    background-color: salmon;
+    margin-left: 5%;
+    padding-left: .1in;
+    padding-right: .1in;
+}
+.navbar {
+    background-color: white;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.navbar-toggler {
+    margin-right: 3%;
+}
+.navbar-light .navbar-toggler {
+    border-color: white;
+}
+.navbar-light .navbar-nav .show>.nav-link {
+    background-color: #e9e9e9f1;
+}
+.dropdown-menu.show {
+    left: unset;
+    right: 0;
+}
+.dropdown-menu {
+    border: none;
+}
+body {
+    background-color: lightgrey;
+}
+.container-fluid {
+    margin-top: .5in;
+}
+.box {
+    background-color: white;
+}
+.header-text {
+    color: salmon;
+    margin-inline-start: .25in;
+    padding-top: .25in;
+}
+#wind-image {
+    width:100%;
+    padding-bottom: 2%;
+}
+.col-md-8 {
+    padding-left: 3%;
+}
+.col-md-4 {
+    padding-right: 3%;
+}
+p {
+    margin-top:25px;
+    padding-left:25px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+}
+.page_image {
+    border: 2px solid salmon;
+}
+#img_no_float {
+    width:50%;
+    padding-bottom: 4%;
+}
+#img_float_left {
+    width: 50%;
+    float: left;
+    padding-bottom: 3%;
+}
+
+/* Small Screen Media Queries */
+
+@media (max-width: 768px) {
+    .navbar {
+        background-color: salmon;
+        padding: 0;
+    }
+    .navbar-nav {
+        background-color: white;
+        padding: .5rem 1rem;
+    }
+    #navbar-lat {
+        color: white;
+        background-color: salmon;
+    }
+    .col-md-8 {
+        padding-right: 3%;
+    }
+    .col-md-4 {
+        padding-left: 3%;
+    }
+    #img_float_left {
+    width:24%;
+    float: none;
+    padding-bottom: 0%;
+    }
+    #img_no_float {
+    width: 24%;
+    padding-bottom: 0%;
+    }
+}
